@@ -3,7 +3,7 @@ include $(PQ_FACTORY)/factory.mk
 pq_part_name := ncurses-5.9
 pq_part_file := $(pq_part_name).tar.gz
 
-pq_configure_args += --prefix=$(part_dir)
+pq_configure_args += --prefix=$(part_dir) --with-shared
 
 #PQ_BIN := infocmp tabs tset tic captoinfo ncurses5-config clear infotocap tput toe reset
 
