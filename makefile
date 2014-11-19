@@ -5,6 +5,8 @@ pq_part_file := $(pq_part_name).tar.gz
 
 pq_configure_args += --prefix=$(part_dir)
 
+PQ_BIN := infocmp tabs tset tic captoinfo ncurses5-config clear infotocap tput toe reset
+
 build-stamp: stage-stamp
 	$(MAKE) -C $(pq_part_name)
 	$(MAKE) -C $(pq_part_name) install  DESTDIR=$(stage_dir)
