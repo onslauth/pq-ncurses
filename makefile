@@ -19,6 +19,7 @@ configure-stamp: patch-stamp
 	touch $@
 
 patch-stamp: unpack-stamp
+	cd $(pq_part_name) && patch -p1 < $(source_dir)/fix-configure-arflags.patch
 	touch $@
 
 unpack-stamp: $(pq_part_file)

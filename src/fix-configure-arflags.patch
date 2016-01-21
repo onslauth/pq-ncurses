@@ -1,0 +1,11 @@
+--- ncurses-5.9/configure	2011-04-01 01:35:51.000000000 +0200
++++ ncurses-5.9-new/configure	2016-01-21 14:09:45.213821009 +0200
+@@ -4230,7 +4230,7 @@
+ else
+ 
+ 	cf_cv_ar_flags=unknown
+-	for cf_ar_flags in -curv curv -crv crv -cqv cqv -rv rv
++	for cf_ar_flags in -curv curv -crv crv -cqv cqv -rv rv Dcvr
+ 	do
+ 
+ 		# check if $ARFLAGS already contains this choice
